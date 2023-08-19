@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   templateUrl: './register-page.component.html',
-  styles: [
-  ]
+  styleUrls: ['./register-page.component.css']
 })
 export class RegisterPageComponent {
 

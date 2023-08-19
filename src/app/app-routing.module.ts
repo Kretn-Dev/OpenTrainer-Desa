@@ -13,6 +13,14 @@ const routes: Routes = [
     //Guards
   },
   {
+    path: 'teachers',
+    loadChildren: () => import('./teachers/teachers.module').then(m => m.TeachersModule),
+  },
+  {
+    path: 'users',
+    loadChildren: () => import('./users/users.module').then(m => m.UsersModule),
+  },
+  {
     path:'**',
     redirectTo: 'auth'
   }
